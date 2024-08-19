@@ -9,5 +9,5 @@
 ## the gallery use React components with babel. 
 
 <div align="center">
-![This is the live site](https://vincinchristmas.github.io/FatCatCafeGallery/)
+[This is the live site](https://vincinchristmas.github.io/FatCatCafeGallery/)
 </div>
