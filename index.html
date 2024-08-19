@@ -19,20 +19,83 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-function Cats() {
+function CatsOne() {
     return (
         <img src="assets/stylesheets/images/cat1.jpg" alt="catphoto"/>
-    )
+)   
+        
 }
+
+function CatsTwo() {
+    return (
+        <img src="assets/stylesheets/images/cat2.jpg" alt="catphoto"/>
+)   
+}
+
+function CatsThree() {
+    return (
+        <img src="assets/stylesheets/images/cat3.jpg" alt="catphoto"/>
+)   
+}
+
+function CatsFour() {
+    return (
+        <img src="assets/stylesheets/images/cat4.jpg" alt="catphoto"/>
+)   
+}
+
+function CatsFive() {
+    return (
+        <img src="assets/stylesheets/images/cat5.jpg" alt="catphoto"/>
+)   
+}
+
+function CatsSix() {
+    return (
+        <img src="assets/stylesheets/images/cat6.jpg" alt="catphoto"/>
+)   
+}
+
+function CatsSeven() {
+    return (
+        <img src="assets/stylesheets/images/cat7.jpg" alt="catphoto"/>
+)   
+}
+
+function CatsEight() {
+    return (
+        <img src="assets/stylesheets/images/cat8.jpg" alt="catphoto"/>
+)   
+}
+
+function CatsNine() {
+    return (
+        <img src="assets/stylesheets/images/cat9.jpg" alt="catphoto"/>
+)   
+}
+
+
+
+
 
 let App = function Gallery() {
     return (
         <section>
-            <Cats />
-
+            <h1>Welcome to Fat Cat Cafe</h1>
+            <CatsOne />
+            <CatsTwo />
+            <CatsThree />
+            <CatsFour />
+            <CatsFive />
+            <CatsSix />
+            <CatsSeven />
+            <CatsEight />
+            <CatsNine />
         </section>
     )
 }
+
+
 
 const root = createRoot(document.getElementById('root'));
 root.render(
@@ -43,7 +106,29 @@ root.render(
 </script>
 
 <style>
-    
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+    img {
+        
+        width: 30%;
+    }
+
 </style>
 
 </html>
