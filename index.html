@@ -40,7 +40,12 @@ function Cats() {
 let App = function Gallery() {
     return (
         <section>
-            <h1>Welcome to Fat Cat Cafe</h1>
+            <h1 className="intro">Welcome to Fat Cat Cafe</h1>
+            <p className="introParagraph">This is a collection of photos of the cat family at the cafe
+            <br></br>
+            The big fat white cate is Yuki: the husband. The wife is an American shorthair named Huahua.
+            <br></br>
+            Yuki is a British shorthair. I will name the kids in a later gallery.</p>
             <Cats />
         </section>
     )
@@ -74,11 +79,38 @@ section {
 
 h1 {
     text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
 }
     img {
         
         width: 30%;
     }
+
+    p {
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: 400;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 2rem;
+    }
+
+    .intro {
+      background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+      background-clip: text;
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+
+    .introParagraph {
+      border: 5px solid gold;
+      padding: 25px;
+    }
+    
 
 </style>
 
