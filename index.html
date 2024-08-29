@@ -19,6 +19,18 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
+const catCouple = {
+  name: 'Yuki & Huahua',
+  theme: {
+    backgroundColor: 'Yellow',
+    color: 'blue'
+  }
+};
+
+
+
+
+
 function Cats() {
     return (
         <>
@@ -37,9 +49,11 @@ function Cats() {
 }
 
 
+
+
 let App = function Gallery() {
     return (
-        <section>
+        <section >
             <h1 className="intro">Welcome to Fat Cat Cafe</h1>
             <p className="introParagraph">This is a collection of photos of the cat family at the cafe
             <br></br>
@@ -47,7 +61,17 @@ let App = function Gallery() {
             <br></br>
             Yuki is a British shorthair. I will name the kids in a later gallery.</p>
             <Cats />
+            <br></br>
+            <br></br>
+            <h1 style={catCouple.theme}>{catCouple.name}'s five beautiful kids</h1>
+            <img
+        className="fiveBabies"
+        src="assets/stylesheets/images/cat16.jpg"
+        alt="totalbabies"
+      />
         </section>
+
+        
     )
 }
 
